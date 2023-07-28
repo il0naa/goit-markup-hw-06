@@ -13,6 +13,10 @@
         max-width: 768px;
     }
 
+    .narrow > .container {
+        max-width: 582px;
+    }
+
     .advantages-list {
         gap: 72px 24px;
     }
@@ -30,8 +34,6 @@
     }
 
     .team-ul {
-        margin-left: 92px;
-        margin-right: 92px;
         row-gap: 64px;
         column-gap: 24px;
     }
@@ -83,7 +85,7 @@
 }
 
 @media screen and (min-width: 1158px) {
-    .container {
+    .container, .narrow > .container {
         max-width: 1158px;
     }
 /* ---------------- ADVANTAGES --------------- */
@@ -168,5 +170,22 @@
 
 /* ---------------- FOOTER --------------- */
 
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer-conteiner {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .footer-conteiner-web {
+        margin-right: 120px;
+    }
+
+    .footer-social-conteiner {
+        margin-right: 80px;
+    }
 
 }
