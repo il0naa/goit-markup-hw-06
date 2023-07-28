@@ -43,7 +43,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1158px;
+    max-width: 428px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -229,19 +229,16 @@ body {
 
 .advantages {
     padding: 96px 0;
-    /* padding: 120px 0; */
 }
 
 .advantages-list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     row-gap: 72px;
-    /* gap: 24px; */
 }
 
 .advantages-item {
     width: 100%;
-    /* width: calc((100% - 24px*3) /4); */
 }
 
 .container-advanteges-icon {
@@ -251,9 +248,6 @@ body {
     border-radius: 4px;
     background-color: var(--light);
     display: none;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .advantages-subtitle {
@@ -263,9 +257,6 @@ body {
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    /* font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2; */
     margin-bottom: 8px;
 }
 .advantages-item-text {
@@ -276,37 +267,12 @@ body {
     letter-spacing: 0.02em;
 }
 
-/* ---------------- SERVICES --------------- */
-
-.services {
-    padding-bottom: 120px;
-}
-
-.services-title {
-    color:  var(--dark);
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    margin-bottom: 72px;
-}
-
-.services-list {
-    display: flex;
-    gap: 24px;
-}
-
-.services-item {
-    width: calc((100% - 48px) / 3);
-}
-
 /* ---------------- TEAM --------------- */
 
 .team {
     background-color: var(--light);
-    padding: 120px 0;
+    padding: 96px 0;
+    /* padding: 120px 0; */
 }
 
 
@@ -323,14 +289,18 @@ body {
 
 .team-ul {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px;
+    /* gap: 24px; */
 }
 
 .team-item {
-    width: calc((100% - 3*24px) / 4);
+    max-width: 264px;
+    /* width: calc((100% - 3*24px) / 4); */
     border-radius: 0px 0px 4px 4px;
     background-color: var(--white-background);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    margin: 0 auto;
 }
 
 
@@ -910,14 +880,116 @@ body {
     fill: var(--light);
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 320px) {
     .container {
-        max-width: 426px;
+        max-width: 428px;
+    }
+
+    .services {
+        display: none;
     }
 }
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 766px;
+        max-width: 768px;
+    }
+
+    .advantages-list {
+        gap: 72px 24px;
+    }
+
+    .advantages-item {
+        width: calc((100% - 24px) /2)
+    }
+
+    .advantages-subtitle {
+        text-align: start;
+    }
+
+    .services {
+        display: none;
+    }
+
+    .team-ul {
+        margin-left: 92px;
+        margin-right: 92px;
+        row-gap: 64px;
+        column-gap: 24px;
+    }
+
+    .team-item {
+        width: calc((100% - 24px) / 2);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
+/* ---------------- ADVANTAGES --------------- */
+
+    .advantages {
+        padding: 120px 0;
+    }
+
+    .advantages-list {
+        gap: 24px;
+    }
+
+    .advantages-item {
+        width: calc((100% - 24px*3) /4);
+    }
+
+    .container-advanteges-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .advantages-subtitle {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+/* ---------------- SERVICES --------------- */
+
+    .services {
+    padding-bottom: 120px;
+    display: block;
+    }
+
+    .services-title {
+        color:  var(--dark);
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        margin-bottom: 72px;
+    }
+
+    .services-list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .services-item {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .team {
+        padding: 120px 0;
+    }
+
+    .team-ul {
+        margin: 0 auto;
+        row-gap: 24px;
+    }
+
+    .team-item {
+            width: calc((100% - 3*24px) / 4);
     }
 }
