@@ -61,6 +61,10 @@ body {
     overflow: hidden;
     }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 
 .link {
     text-decoration: none;
@@ -180,6 +184,7 @@ body {
 .mob-contact-list {
     display: flex;
     flex-direction: column;
+    font-style: normal;
     flex-wrap: wrap;
     gap: 40px;
 }
