@@ -13,6 +13,12 @@
         line-height: 1.25;
     }
 
+    .mob-contact-tel {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
 }
 
 @media screen and (min-width: 428px) {
@@ -22,12 +28,6 @@
 
     .services {
         display: none;
-    }
-
-    .mob-contact-tel {
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.11;
     }
 
     .mob-social-list {
@@ -103,7 +103,7 @@
     
     .header-contact {
         display: block;
-        gap: 12x;
+        gap: 12px;
         margin-left: auto;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -130,7 +130,7 @@
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
-    (min-resolution: 2ppx) {
+    (min-resolution: 2dppx) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)), url(../images/hero-background-talet2x.jpg);
@@ -257,7 +257,7 @@
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
-    (min-resolution: 2ppx) {
+    (min-resolution: 2dppx) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)), url(../images/hero-background-desktop2x.jpg);
