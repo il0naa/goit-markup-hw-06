@@ -19,6 +19,10 @@
         line-height: 1.5;
     }
 
+    .portfolio-button-list {
+        column-gap: 10px;
+    }
+
 }
 
 @media screen and (min-width: 428px) {
