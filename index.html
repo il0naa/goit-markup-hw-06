@@ -30,7 +30,7 @@
                 </nav>
                 <address class="header-adress">
                     <ul class="header-contact list">
-                        <li class="header-contact-item">
+                        <li class="header-contact-item-tel">
                             <a class="header-contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
                         <li class="header-contact-item">
@@ -466,14 +466,14 @@
                 <div class="footer-social-form">
                     <p class="footer-title-sub">Subscribe</p>
                     <form class="footer-form">
-                        <label aria-label="E-mail" class="footer-subscribe-label">
+                        <label for="subscribe-input" aria-label="E-mail" class="footer-subscribe-label"></label>
                             <input 
                                 type="email" 
                                 name="footer-email" 
                                 class="footer-input" 
-                                placeholder="E-mail" 
+                                placeholder="E-mail"
+                                id="subscribe-input" 
                             />
-                        </label>
                         <button type="submit" class="footer-btn">Subscribe
                             <svg class="footer-subscribe-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-telegram"></use>

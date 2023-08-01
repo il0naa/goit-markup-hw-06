@@ -107,6 +107,20 @@ body {
     color: var(--dark);
 }
 
+.current {
+    color: var(--pressedstate);
+    position: relative;
+}
+
+.mob-menu .current {
+    color: var(--pressedstate);
+}
+
+.current::after {
+    content: '';
+    background-color: var(--pressedstate);
+}
+
 .header-menu, .header-adress {
     display: none;
 }
@@ -190,7 +204,7 @@ body {
 }
 
 .mob-contact-tel {
-    color: var(--text);
+    color: var(--primary-brand);
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -209,7 +223,7 @@ body {
 .mob-contact-tel:focus,
 .mob-contact-mail:hover,
 .mob-contact-mail:focus {
-    color: var(--primary-brand);
+    color: var(--pressedstate);
 }
 
 .mob-social-list {
@@ -256,6 +270,7 @@ body {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
     rgba(46, 47, 66, 0.7)), url(../images/hero-mobile-background.jpg);
     width: 100%;
+    max-width: 428px;
     padding: 112px 0;
     margin: 0 auto;
     background-position: center;
@@ -598,6 +613,7 @@ body {
     margin: 0 auto;
     margin-bottom: 16px;
 }
+
 .footer-input {
     width: 100%;
     height: 40px;
@@ -771,8 +787,8 @@ body {
 }
 
 .modal {
-    width: 408px;
-    min-height: 584px;
+    width: 100%;
+    max-width: 392px;
     background-color: var(--modal-background);
     border-radius: 4px;
     position: absolute;

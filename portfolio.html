@@ -30,7 +30,7 @@
                 </nav>
                 <address class="header-adress">
                     <ul class="header-contact list">
-                        <li class="header-contact-item">
+                        <li class="header-contact-item-tel">
                             <a class="header-contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
                         <li class="header-contact-item">
@@ -412,58 +412,57 @@
                     </ul>
                 </div>
             </section>
-           
         </main>
         <footer class="footer narrow">
             <div class="container footer-conteiner">
-                <div class=" footer-conteiner-web">
-                    <a class="footer-logo link" href="./index.html">Web<span class="footer-logo-accent">Studio</span></a>
-                    <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
-                </div>
-                <div class=" footer-social-conteiner">
-                    <p class="footer-text-social">Social media</p>
-                    <ul class="footer-social-list list">
-                        <li class="footer-social-item">
-                            <a class="footer-item-icon link" aria-label="instagram" href="" target="_blank" rel="noopener no-referrer">
-                                <svg class="social-swg" width="24" height="24">
-                                    <use href="./images/icons.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-social-item">
-                            <a class="footer-item-icon link" aria-label="twitter" href="" target="_blank" rel="noopener no-referrer">
-                                <svg class="social-swg" width="24" height="24">
-                                    <use href="./images/icons.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-social-item">
-                            <a class="footer-item-icon link" aria-label="fasebook" href="" target="_blank" rel="noopener no-referrer">
-                                <svg class="social-swg" width="24" height="24">
-                                    <use href="./images/icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-social-item">
-                            <a class="footer-item-icon link" aria-label="linkedin" href="" target="_blank" rel="noopener no-referrer">
-                                <svg class="social-swg" width="24" height="24">
-                                    <use href="./images/icons.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="footer-conteiner-web">
+                        <a class="footer-logo link" href="./index.html">Web<span class="footer-logo-accent">Studio</span></a>
+                        <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+                    </div>
+                    <div class=" footer-social-conteiner">
+                        <p class="footer-text-social">Social media</p>
+                        <ul class="footer-social-list list">
+                            <li class="footer-social-item">
+                                <a class="footer-item-icon link" aria-label="instagram" href="" target="_blank" rel="noopener no-referrer">
+                                    <svg class="social-swg" width="24" height="24">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social-item">
+                                <a class="footer-item-icon link" aria-label="twitter" href="" target="_blank" rel="noopener no-referrer">
+                                    <svg class="social-swg" width="24" height="24">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social-item">
+                                <a class="footer-item-icon link" aria-label="fasebook" href="" target="_blank" rel="noopener no-referrer">
+                                    <svg class="social-swg" width="24" height="24">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social-item">
+                                <a class="footer-item-icon link" aria-label="linkedin" href="" target="_blank" rel="noopener no-referrer">
+                                    <svg class="social-swg" width="24" height="24">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 <div class="footer-social-form">
                     <p class="footer-title-sub">Subscribe</p>
                     <form class="footer-form">
-                        <label aria-label="E-mail" class="footer-subscribe-label">
+                        <label for="subscribe-input" aria-label="E-mail" class="footer-subscribe-label"></label>
                             <input 
                                 type="email" 
                                 name="footer-email" 
                                 class="footer-input" 
-                                placeholder="E-mail" 
+                                placeholder="E-mail"
+                                id="subscribe-input" 
                             />
-                        </label>
                         <button type="submit" class="footer-btn">Subscribe
                             <svg class="footer-subscribe-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-telegram"></use>
