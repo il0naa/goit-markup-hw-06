@@ -214,9 +214,8 @@ body {
 
 .mob-social-list {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     max-width: 328px;
-    gap: 13%;
 }
 
 .mob-social-item {

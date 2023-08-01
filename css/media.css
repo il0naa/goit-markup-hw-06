@@ -1,4 +1,4 @@
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 427px) {
     .services {
         display: none;
     }
@@ -13,12 +13,6 @@
         line-height: 1.25;
     }
 
-    .mob-contact-tel {
-        font-size: 26px;
-        font-weight: 600;
-        line-height: 1.5;
-    }
-
 }
 
 @media screen and (min-width: 428px) {
@@ -28,6 +22,17 @@
 
     .services {
         display: none;
+    }
+
+    .mob-contact-tel {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+    }
+
+    .mob-social-list {
+        justify-content: center;
+        gap: 56px;
     }
 }
 
